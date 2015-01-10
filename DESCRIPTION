@@ -4,7 +4,9 @@ Version: 0.1
 Authors@R: "Christopher Brown <chris.brown@decisionpatterns.com> [aut, cre]"
 Description: These utilities extend the very useful lubridate package.
 Depends: R (>= 3.1.0)
-License: What license is it under?
+License: GPL-2
 LazyData: true
-Extends: lubridate
+Depends: lubridate
+Imports:
+    memoise
 Suggests: testthat

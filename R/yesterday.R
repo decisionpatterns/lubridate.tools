@@ -1,25 +1,32 @@
-#' yesterday 
-#' 
+#' yesterday and tomorrow
+#'
 #' This same time yesterday
-#' 
-#' Can all be done as a binding
+#'
+#' @param tzone a character vector specifying which time zone you would like
+#' the current time in. tzone defaults to your computer's system timezone. You
+#' can retrieve the current time in the Universal Coordinated Time (UTC) with
+#' now("UTC").
+#'
+#' @seealso
+#'   \code{\link[lubridate]{here}}
+#'
 #' @examples
-#' 
-#'   yesterday() 
-#'   today()     # lubridate function
-#'   tomorrow()  
-#'   
-#'   ( now() - ddays(1) ) > yesterday() 
+#'
+#'   yesterday()
+#'   tomorrow()
+#'
+#'  #  ( now() - ddays(1) ) > yesterday()
 #'
 #' @import lubridate
 #' @export
 
-yesterday <- function( tzone="" ) 
-  as.Date( force_tz( floor_date( now() - ddays(1), "day" ), tzone=tzone ) )
+yesterday <- function( tzone=NULL )
+  floor_date( now( tzone ) - ddays(1), "day" )
 
 
-#' @aliases tomorrow 
+#' @aliases tomorrow
 #' @rdname yesterday
+#' @export
 
-tomorrow <- function( tzone="" ) 
-  as.Date( force_tz( floor_date( now() + ddays(1), "day" ), tzone=tzone ) )
+tomorrow <- function( tzone="" )
+  floor_date( now(tzone) + ddays(1), "day" )
