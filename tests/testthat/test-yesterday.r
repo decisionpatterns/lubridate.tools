@@ -1,5 +1,7 @@
 library(testthat)
 
+context( 'yesterday, now, here, today, tomorrow')
+
 expect_is( yesterday(), "POSIXct" )
 expect_is( now(), "POSIXct" )
 expect_is( here(), "POSIXct" )

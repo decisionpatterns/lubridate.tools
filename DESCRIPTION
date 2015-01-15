@@ -1,6 +1,7 @@
 Package: lubridate.tools
 Title: Utilities that extend lubridate
-Version: 0.1
+Version: 0.2
+Date: 2015-01-14
 Authors@R: "Christopher Brown <chris.brown@decisionpatterns.com> [aut, cre]"
 Description: These utilities extend the very useful lubridate package.
 Depends: R (>= 3.1.0)
