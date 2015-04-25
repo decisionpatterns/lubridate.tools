@@ -20,4 +20,7 @@ diffyears(x, y)
 \description{
 Difference between dates expressed in days or weeks
 }
+\references{
+\url{http://stackoverflow.com/questions/15569333/r-get-date-difference-in-years-floating-point}
+}
 
