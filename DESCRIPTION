@@ -1,7 +1,7 @@
 Package: lubridate.tools
 Title: Utilities that extend lubridate
-Version: 0.2.1
-Date: 2015-04-25
+Version: 0.2.2
+Date: 2015-07-01
 Authors@R: "Christopher Brown <chris.brown@decisionpatterns.com> [aut, cre]"
 Description: These utilities extend the very useful lubridate package.
 Depends: R (>= 3.1.0)
@@ -9,5 +9,6 @@ License: GPL-2
 LazyData: true
 Depends: lubridate
 Imports:
-    memoise
+    memoise,
+    stringr
 Suggests: testthat
