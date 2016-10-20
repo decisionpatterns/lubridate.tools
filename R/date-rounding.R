@@ -25,12 +25,20 @@ monthify <- function(x) lubridate::floor_date( x, unit="month")
 
 #' @export
 #' @rdname date-rounding
+quarterify <- function(x) lubridate::floor_date( x, unit="quarter")
+
+#' @export
+#' @rdname date-rounding
 yearify <- function(x) lubridate::floor_date( x, unit="year")
 
 
 #' @export
 #' @rdname date-rounding
 floor_year <- function(...) lubridate::floor_date( ..., unit="year" )
+
+#' @export
+#' @rdname date-rounding
+floor_quarter <- function(...) lubridate::floor_date( ..., unit="quarter" )
 
 #' @export
 #' @rdname date-rounding
@@ -60,6 +68,10 @@ floor_second <- function(...) lubridate::floor_date( ..., unit="second" )
 #' @export
 #' @rdname date-rounding
 ceiling_year <- function(...) lubridate::ceiling_date( ..., unit="year" )
+
+#' @export
+#' @rdname date-rounding
+ceiling_quarter <- function(...) lubridate::ceiling_date( ..., unit="quarter" )
 
 #' @export
 #' @rdname date-rounding
