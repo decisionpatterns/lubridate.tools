@@ -11,19 +11,38 @@
 \alias{ceiling_year}
 \alias{dayify}
 \alias{floor_day}
+\alias{floor_halfmonth}
 \alias{floor_hour}
+\alias{floor_isoweek52}
 \alias{floor_minute}
 \alias{floor_month}
 \alias{floor_quarter}
 \alias{floor_second}
+\alias{floor_semimonth}
 \alias{floor_week}
+\alias{floor_week52}
 \alias{floor_year}
+\alias{halfmonthify}
+\alias{isoweek52ify}
 \alias{monthify}
 \alias{quarterify}
+\alias{semimonthify}
+\alias{week52ify}
+\alias{weekify}
 \alias{yearify}
 \title{Date rounding}
 \usage{
 dayify(x)
+
+weekify(x)
+
+week52ify(x)
+
+isoweek52ify(x)
+
+semimonthify(x)
+
+halfmonthify(x)
 
 monthify(x)
 
@@ -35,7 +54,15 @@ floor_year(...)
 
 floor_quarter(...)
 
+floor_semimonth(x)
+
+floor_halfmonth(x)
+
 floor_month(...)
+
+floor_week52(...)
+
+floor_isoweek52(...)
 
 floor_week(...)
 
@@ -75,12 +102,36 @@ Function to round dates to various units
 The 'date'-ify functions round each date down to the beginning of that
 period using the \code{\link{floor_date}} function. This
 allows the continued use of date functions.
+
+
+
+\code{floor_X} functions round to the minimum and amximum of the interval
+respectively.  They are convenience
+functions for \code{floor_date(x, unit='X')}.
+
+\code{Xify} functions are synonyms for \code{floor_X}.
+
+Functions denoted \code{week52} normalize the number of weeks in year to 52
+by pushing any days in week 53 into the 52nd week. Note, isoweek functions do
+not align nicely to year boundaries.
 }
 \note{
-TODO
-  - convert automatically from character
+TODO:
+  - parse from character
+}
+\examples{
+  x <- seq( ymd(20011231), ymd(20301231), "year" )
+  lubridate::week(x)
+  week52ify(x)
+  week( week52ify(x) )
+
+  x <- seq( ymd(20011231), ymd(20301231), "year" )
+  lubridate::isoweek(x)
+  isoweek52ify(x)
+  isoweek( isoweek52ify(x) )
+
 }
 \seealso{
-\code{\link{floor_date}}
+\code{\link[lubridate]{floor_date}},
 }
 
