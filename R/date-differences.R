@@ -6,6 +6,9 @@
 #' @references
 #'   \url{http://stackoverflow.com/questions/15569333/r-get-date-difference-in-years-floating-point}
 #'
+#' @seealso
+#'   \code{\link[base]{difftime}}
+#'
 #' @export
 #' @rdname diffdays
 
@@ -21,5 +24,3 @@ diffweeks <- function( x, y )
 #' @rdname diffdays
 diffyears <- function( x, y )
   as.numeric( difftime( x, y, units="weeks" ) )/52.25
-
-

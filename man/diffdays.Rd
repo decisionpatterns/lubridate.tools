@@ -23,4 +23,7 @@ Difference between dates expressed in days or weeks
 \references{
 \url{http://stackoverflow.com/questions/15569333/r-get-date-difference-in-years-floating-point}
 }
+\seealso{
+\code{\link[base]{difftime}}
+}
 
