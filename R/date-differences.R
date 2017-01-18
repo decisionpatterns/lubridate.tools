@@ -24,3 +24,7 @@ diffweeks <- function( x, y )
 #' @rdname diffdays
 diffyears <- function( x, y )
   as.numeric( difftime( x, y, units="weeks" ) )/52.25
+
+#' @export
+#' @rdname diffdays
+diffmonths <- function(x, y) elapsed_months(x,y)

@@ -2,6 +2,7 @@
 % Please edit documentation in R/date-differences.R
 \name{diffdays}
 \alias{diffdays}
+\alias{diffmonths}
 \alias{diffweeks}
 \alias{diffyears}
 \title{Difference between dates expressed in days or weeks}
@@ -11,6 +12,8 @@ diffdays(x, y)
 diffweeks(x, y)
 
 diffyears(x, y)
+
+diffmonths(x, y)
 }
 \arguments{
 \item{x}{the first date/time object}
