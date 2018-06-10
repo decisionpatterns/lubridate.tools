@@ -13,5 +13,10 @@
 #' @import stringr
 #' @export
 
-mmm_yyyy <- function(x ,... )
+mmm_yyyy <- function(x ,... ) {
+  
+  if( is.POSIXct(x) ) { 
+    return( floor_month(x) )  # Don't try to reparse
+  }  
   parse_date_time( paste0(x, " 01"), "b Y d")
+}

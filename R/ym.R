@@ -5,6 +5,11 @@
 #' @param x vector; values that represent months in ym form
 #' @param ... arguments passed to ymd
 #'
+#' @details 
+#' 
+#' Parses a ym date string by setting the date/time to the first moment of the
+#' month. If `x` is already a POSIX date, `floor_month(x)` is performed. 
+#' 
 #' @return
 #'   POSIXct
 #'
@@ -17,6 +22,11 @@
 #' @export
 
 ym <- function(x, ...) {
+  
+  if( is.POSIXct(x) ) { 
+    return( floor_month(x) )  # Don't affect already parsed values
+  }  
   ymd( paste0( x, "01" ), ... )
+
 }
 
