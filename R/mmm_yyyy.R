@@ -1,4 +1,6 @@
-#' Parse Mon-Year format
+#' Date Parsing
+#'
+#' Parse Mon-Year (i.e. "Jan 1970") format
 #'
 #' @param x character
 #'
@@ -14,9 +16,9 @@
 #' @export
 
 mmm_yyyy <- function(x ,... ) {
-  
-  if( is.POSIXct(x) ) { 
+
+  if( is.POSIXct(x) ) {
     return( floor_month(x) )  # Don't try to reparse
-  }  
+  }
   parse_date_time( paste0(x, " 01"), "b Y d")
 }

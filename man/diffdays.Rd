@@ -2,9 +2,9 @@
 % Please edit documentation in R/date-differences.R
 \name{diffdays}
 \alias{diffdays}
-\alias{diffmonths}
 \alias{diffweeks}
 \alias{diffyears}
+\alias{diffmonths}
 \title{Difference between dates expressed in days or weeks}
 \usage{
 diffdays(x, y)
@@ -29,4 +29,3 @@ Difference between dates expressed in days or weeks
 \seealso{
 \code{\link[base]{difftime}}
 }
-

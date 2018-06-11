@@ -19,4 +19,3 @@ coerce object to a \code{lubridate} duration object
   as.duration( "1 week" )
 
 }
-

@@ -17,6 +17,10 @@ POSIXct
 \description{
 Represent a data as the first day of the month of an interval.
 }
+\details{
+Parses a ym date string by setting the date/time to the first moment of the
+month. If \code{x} is already a POSIX date, \code{floor_month(x)} is performed.
+}
 \examples{
   months <- c('200101','200102', '200103' )
   ym(months)
@@ -25,4 +29,3 @@ Represent a data as the first day of the month of an interval.
 \seealso{
 \code{\link[lubridate]{yday}}
 }
-

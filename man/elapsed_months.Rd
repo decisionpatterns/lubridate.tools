@@ -27,4 +27,3 @@ Calculate elapsed months between days
 \references{
 http://stackoverflow.com/a/26640698
 }
-

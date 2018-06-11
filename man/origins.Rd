@@ -3,11 +3,11 @@
 \docType{data}
 \name{epoch_origin}
 \alias{epoch_origin}
-\alias{origin_Date}
+\alias{origin_epoch}
 \alias{origin_POSIXct}
 \alias{origin_POSIXlt}
 \alias{origin_chron}
-\alias{origin_epoch}
+\alias{origin_Date}
 \title{1970-01-01 UTC}
 \format{An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.}
 \usage{
@@ -44,4 +44,3 @@ lubridate::origin
 \keyword{chron}
 \keyword{data}
 \keyword{datasets}
-

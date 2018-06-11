@@ -22,4 +22,3 @@ Return the origin for a time-series class
 \seealso{
 \code{\link{origins}}
 }
-
