@@ -9,7 +9,19 @@
 \alias{origin_chron}
 \alias{origin_Date}
 \title{1970-01-01 UTC}
-\format{An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.}
+\format{
+An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.
+
+An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.
+
+An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.
+
+An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.
+
+An object of class \code{POSIXct} (inherits from \code{POSIXt}) of length 1.
+
+An object of class \code{Date} of length 1.
+}
 \usage{
 epoch_origin
 

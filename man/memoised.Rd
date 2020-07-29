@@ -6,14 +6,26 @@
 \alias{ymd_memo}
 \title{Memoised functions}
 \usage{
-ceiling_date_memo(x, unit = "seconds", change_on_boundary = NULL,
-  week_start = getOption("lubridate.week.start", 7))
+ceiling_date_memo(
+  x,
+  unit = "seconds",
+  change_on_boundary = NULL,
+  week_start = getOption("lubridate.week.start", 7)
+)
 
-floor_date_memo(x, unit = "seconds",
-  week_start = getOption("lubridate.week.start", 7))
+floor_date_memo(
+  x,
+  unit = "seconds",
+  week_start = getOption("lubridate.week.start", 7)
+)
 
-ymd_memo(..., quiet = FALSE, tz = NULL, locale = Sys.getlocale("LC_TIME"),
-  truncated = 0)
+ymd_memo(
+  ...,
+  quiet = FALSE,
+  tz = NULL,
+  locale = Sys.getlocale("LC_TIME"),
+  truncated = 0
+)
 }
 \arguments{
 \item{...}{additional arguments}
